@@ -103,6 +103,18 @@ const Navbar = () => {
           >
             Cart
           </Button>
+          <Button
+            color="inherit"
+            component={RouterLink}
+            to="/cart"
+            startIcon={
+              <Badge badgeContent={items.length} color="secondary">
+                <ShoppingCartIcon />
+              </Badge>
+            }
+          >
+            Cart
+          </Button>
 
           {user ? (
             <>
